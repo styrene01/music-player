@@ -10,7 +10,7 @@ const songsDB = {
 			name: "Starboy",
 			artist: "The Weeknd",
 			length: "4:16",
-			cover: "logoo"
+			cover: "/src/spotify-logo.png"
 		},
 		{
 			name: "Demons",
@@ -69,15 +69,15 @@ function App() {
 					{songsDB[selectedSong].map((song) => (
 						<li key={song.name}>
 							<div>
-								<img style={{ display: "inline", float: "left" }} src={song.cover} alt="Album Pic"></img>
+								<img className="img" style={{ display: "inline", float: "left" }} src={song.cover} alt="Album Pic"></img>
 								<ul style={{ listStyle: "none" }}>
 									<div>
 										<li>{song.name}</li>
 										<li>{song.artist}</li>
 									</div>
-									{/* <div style={{ display: "block", float: "right" }}>{song.length}</div> */}
-									<li style={{ display: "block", float: "right" }}>{song.length}</li>
+									{/* <li>{song.length}</li> */}
 								</ul>
+								<p style={{ display: "block", float: "" }}>{song.length}</p>
 							</div>
 						</li>
 					))}
