@@ -1,33 +1,68 @@
+@font-face {
+	font-family: Basier;
+	src: url("D:\Projects\levelzero\music-player\src\Basier Circle\basiercircle-regular.otf") format("opentype");
+}
 .App {
-    font-family: sans-serif;
-    color: white;
-    margin: 0px;
-    /* text-align: center; */
+	font-family: Basier;
+	color: white;
+	margin: 0px;
+	/* text-align: center; */
 }
 body {
-    margin: 0px;
+	margin: 0px;
+	/* font-family: BasierCircle; */
 }
 
+h2 {
+	font-family: Basier;
+}
 .column {
-    float: left;
-    height: 700px;
+	float: left;
+	height: 700px;
 }
 
 .column h2 {
-    padding: 0px 0px 0px 10px;
+	font-weight: bold;
 }
 
 .navigation {
-    width: 20%;
-    background-color: #191414;
+	width: 20%;
+	background-color: #191414;
+}
+
+.navigation p {
+	font-weight: 400;
+	opacity: 0.4;
+}
+.navigation img {
+	max-width: 45px;
+	display: inline;
+	float: left;
+	padding: 10px 0px;
 }
 
 .for-you {
-    width: 30%;
-    background-color: #191414;
+	width: 40%;
+	background-color: #191414;
 }
 
 .music-details {
-    width: 50%;
-    background-color: #191414;
+	width: 40%;
+	background-color: #191414;
+}
+
+.music-details h2 {
+	margin-bottom: 0px;
+	margin-top: 60px;
+	font-weight: 700;
+}
+.music-details p {
+	margin: 0px;
+	opacity: 0.6;
+}
+
+.music-details img {
+	margin: 20px 0px;
+	width: 400px;
+	height: 400px;
 }
