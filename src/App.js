@@ -10,12 +10,13 @@ const songsDB = {
 			name: "Starboy",
 			artist: "The Weeknd",
 			length: "4:16",
-			cover: "/src/spotify-logo.png"
+			cover: "/public/images/spotify-logo.png"
 		},
 		{
 			name: "Demons",
 			artist: "Imagine Dragons",
-			length: "5:24"
+			length: "5:24",
+			cover: "spotify-logo.png"
 		},
 		{
 			name: "Mouth of the river",
@@ -62,23 +63,26 @@ function App() {
 				<p>Top Tracks</p>
 				<p>Favourites</p>
 				<p>Recently Played</p>
+				<img style={{ margin: "30px", position: "fixed", bottom: "0" }} alt="profile" src={logoo}></img>
 			</div>
 			<div class="column for-you">
 				<h2>For You</h2>
+
 				<ul style={{ "list-style": "none" }}>
 					{songsDB[selectedSong].map((song) => (
 						<li key={song.name}>
-							<div>
-								<img className="img" style={{ display: "inline", float: "left" }} src={song.cover} alt="Album Pic"></img>
+							<section style={{ margin: "15px" }}>
+								<img style={{ display: "inline", float: "left" }} src={song.cover} alt="text"></img>
 								<ul style={{ listStyle: "none" }}>
 									<div>
 										<li>{song.name}</li>
 										<li>{song.artist}</li>
 									</div>
+
 									{/* <li>{song.length}</li> */}
 								</ul>
-								<p style={{ display: "block", float: "" }}>{song.length}</p>
-							</div>
+								<div style={{ display: "block", float: "right" }}>{song.length}</div>
+							</section>
 						</li>
 					))}
 				</ul>

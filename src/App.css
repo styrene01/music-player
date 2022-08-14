@@ -45,6 +45,9 @@ h2 {
 	width: 40%;
 	background-color: #191414;
 }
+.for-you img {
+	max-width: 45px;
+}
 
 .music-details {
 	width: 40%;
