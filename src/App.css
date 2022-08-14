@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Basier;
-	src: url("src/Basier Circle/basiercircle-regular.otf") format("opentype");
+	src: url("basiercircle-regular.otf") format("opentype");
 }
 .App {
 	font-family: Basier;
